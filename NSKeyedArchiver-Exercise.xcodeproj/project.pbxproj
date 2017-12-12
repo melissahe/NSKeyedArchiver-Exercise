@@ -13,6 +13,9 @@
 		81EC4B401FE08837008F744D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EC4B3E1FE08837008F744D /* LaunchScreen.storyboard */; };
 		81EC4B4A1FE08A11008F744D /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B491FE08A11008F744D /* ImageListViewController.swift */; };
 		81EC4B4C1FE08A66008F744D /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B4B1FE08A66008F744D /* ImageTableViewCell.swift */; };
+		81EC4B4F1FE08D9F008F744D /* FavoriteImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B4E1FE08D9F008F744D /* FavoriteImageViewController.swift */; };
+		81EC4B511FE08E36008F744D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B501FE08E36008F744D /* Image.swift */; };
+		81EC4B541FE097D5008F744D /* PixabayImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B531FE097D5008F744D /* PixabayImageAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		81EC4B411FE08837008F744D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81EC4B491FE08A11008F744D /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		81EC4B4B1FE08A66008F744D /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		81EC4B4E1FE08D9F008F744D /* FavoriteImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageViewController.swift; sourceTree = "<group>"; };
+		81EC4B501FE08E36008F744D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		81EC4B531FE097D5008F744D /* PixabayImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayImageAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				81EC4B471FE0895C008F744D /* Unused Stuff */,
+				81EC4B521FE08E3B008F744D /* Models */,
 				81EC4B4D1FE08A6C008F744D /* Views */,
 				81EC4B481FE08995008F744D /* View Controllers */,
 				81EC4B391FE08837008F744D /* Main.storyboard */,
@@ -79,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				81EC4B491FE08A11008F744D /* ImageListViewController.swift */,
+				81EC4B4E1FE08D9F008F744D /* FavoriteImageViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -89,6 +97,15 @@
 				81EC4B4B1FE08A66008F744D /* ImageTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		81EC4B521FE08E3B008F744D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81EC4B501FE08E36008F744D /* Image.swift */,
+				81EC4B531FE097D5008F744D /* PixabayImageAPIClient.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +182,10 @@
 			files = (
 				81EC4B4C1FE08A66008F744D /* ImageTableViewCell.swift in Sources */,
 				81EC4B4A1FE08A11008F744D /* ImageListViewController.swift in Sources */,
+				81EC4B4F1FE08D9F008F744D /* FavoriteImageViewController.swift in Sources */,
 				81EC4B361FE08837008F744D /* AppDelegate.swift in Sources */,
+				81EC4B541FE097D5008F744D /* PixabayImageAPIClient.swift in Sources */,
+				81EC4B511FE08E36008F744D /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
