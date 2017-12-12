@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		81EC4B361FE08837008F744D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B351FE08837008F744D /* AppDelegate.swift */; };
-		81EC4B381FE08837008F744D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B371FE08837008F744D /* ViewController.swift */; };
 		81EC4B3B1FE08837008F744D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EC4B391FE08837008F744D /* Main.storyboard */; };
 		81EC4B3D1FE08837008F744D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EC4B3C1FE08837008F744D /* Assets.xcassets */; };
 		81EC4B401FE08837008F744D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EC4B3E1FE08837008F744D /* LaunchScreen.storyboard */; };
+		81EC4B4A1FE08A11008F744D /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B491FE08A11008F744D /* ImageListViewController.swift */; };
+		81EC4B4C1FE08A66008F744D /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B4B1FE08A66008F744D /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81EC4B321FE08837008F744D /* NSKeyedArchiver-Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSKeyedArchiver-Exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EC4B351FE08837008F744D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81EC4B371FE08837008F744D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81EC4B3A1FE08837008F744D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81EC4B3C1FE08837008F744D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81EC4B3F1FE08837008F744D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81EC4B411FE08837008F744D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81EC4B491FE08A11008F744D /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
+		81EC4B4B1FE08A66008F744D /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		81EC4B341FE08837008F744D /* NSKeyedArchiver-Exercise */ = {
 			isa = PBXGroup;
 			children = (
-				81EC4B351FE08837008F744D /* AppDelegate.swift */,
-				81EC4B371FE08837008F744D /* ViewController.swift */,
+				81EC4B471FE0895C008F744D /* Unused Stuff */,
+				81EC4B4D1FE08A6C008F744D /* Views */,
+				81EC4B481FE08995008F744D /* View Controllers */,
 				81EC4B391FE08837008F744D /* Main.storyboard */,
-				81EC4B3C1FE08837008F744D /* Assets.xcassets */,
-				81EC4B3E1FE08837008F744D /* LaunchScreen.storyboard */,
 				81EC4B411FE08837008F744D /* Info.plist */,
 			);
 			path = "NSKeyedArchiver-Exercise";
+			sourceTree = "<group>";
+		};
+		81EC4B471FE0895C008F744D /* Unused Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				81EC4B3C1FE08837008F744D /* Assets.xcassets */,
+				81EC4B3E1FE08837008F744D /* LaunchScreen.storyboard */,
+				81EC4B351FE08837008F744D /* AppDelegate.swift */,
+			);
+			path = "Unused Stuff";
+			sourceTree = "<group>";
+		};
+		81EC4B481FE08995008F744D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81EC4B491FE08A11008F744D /* ImageListViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		81EC4B4D1FE08A6C008F744D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81EC4B4B1FE08A66008F744D /* ImageTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81EC4B381FE08837008F744D /* ViewController.swift in Sources */,
+				81EC4B4C1FE08A66008F744D /* ImageTableViewCell.swift in Sources */,
+				81EC4B4A1FE08A11008F744D /* ImageListViewController.swift in Sources */,
 				81EC4B361FE08837008F744D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
