@@ -16,6 +16,8 @@
 		81EC4B4F1FE08D9F008F744D /* FavoriteImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B4E1FE08D9F008F744D /* FavoriteImageViewController.swift */; };
 		81EC4B511FE08E36008F744D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B501FE08E36008F744D /* Image.swift */; };
 		81EC4B541FE097D5008F744D /* PixabayImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B531FE097D5008F744D /* PixabayImageAPIClient.swift */; };
+		81EC4B561FE0A43D008F744D /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B551FE0A43C008F744D /* NetworkHelper.swift */; };
+		81EC4B581FE0A80A008F744D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EC4B571FE0A80A008F744D /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		81EC4B4E1FE08D9F008F744D /* FavoriteImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageViewController.swift; sourceTree = "<group>"; };
 		81EC4B501FE08E36008F744D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		81EC4B531FE097D5008F744D /* PixabayImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayImageAPIClient.swift; sourceTree = "<group>"; };
+		81EC4B551FE0A43C008F744D /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		81EC4B571FE0A80A008F744D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		81EC4B341FE08837008F744D /* NSKeyedArchiver-Exercise */ = {
 			isa = PBXGroup;
 			children = (
+				81EC4B551FE0A43C008F744D /* NetworkHelper.swift */,
+				81EC4B571FE0A80A008F744D /* AppError.swift */,
 				81EC4B471FE0895C008F744D /* Unused Stuff */,
 				81EC4B521FE08E3B008F744D /* Models */,
 				81EC4B4D1FE08A6C008F744D /* Views */,
@@ -180,9 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EC4B561FE0A43D008F744D /* NetworkHelper.swift in Sources */,
 				81EC4B4C1FE08A66008F744D /* ImageTableViewCell.swift in Sources */,
 				81EC4B4A1FE08A11008F744D /* ImageListViewController.swift in Sources */,
 				81EC4B4F1FE08D9F008F744D /* FavoriteImageViewController.swift in Sources */,
+				81EC4B581FE0A80A008F744D /* AppError.swift in Sources */,
 				81EC4B361FE08837008F744D /* AppDelegate.swift in Sources */,
 				81EC4B541FE097D5008F744D /* PixabayImageAPIClient.swift in Sources */,
 				81EC4B511FE08E36008F744D /* Image.swift in Sources */,

@@ -23,6 +23,62 @@ final class Image: NSObject, NSCoding {
     let thumbnailURL: String
     let hdURL: String
     
+    init(numberOfLikes: Int, numberOfFavorites: Int, tags: String, numberOfViews: Int, numberOfDownloads: Int, userName: String, thumbnailURL: String, hdURL: String) {
+        self.numberOfLikes = numberOfLikes
+        self.numberOfFavorites = numberOfFavorites
+        self.tags = tags
+        self.numberOfViews = numberOfViews
+        self.numberOfDownloads = numberOfDownloads
+        self.userName = userName
+        self.thumbnailURL = thumbnailURL
+        self.hdURL = hdURL
+    }
+    
+    convenience init?(from imageDict: [String : Any]) {
+        guard let numberOfLikes = imageDict["likes"] as? Int else {
+            print("something wrong with number of likes")
+            return nil
+        }
+        
+        guard let numberOfFavorites = imageDict["favorites"] as? Int else {
+            print("something wrong with favorites")
+            return nil
+        }
+        
+        guard let tags = imageDict["tags"] as? String else {
+            print("something wrong with tags")
+            return nil
+        }
+        
+        guard let numberOfViews = imageDict["views"] as? Int else {
+            print("something wrong with number of likes")
+            return nil
+        }
+        
+        guard let numberOfDownloads = imageDict["downloads"] as? Int else {
+            print("something wrong with number of downloads")
+            return nil
+        }
+        
+        guard let userName = imageDict["user"] as? String else {
+            print("something wrong with user")
+            return nil
+        }
+        
+        guard let thumbnailURL = imageDict["previewURL"] as? String else {
+            print("something wrong with thumbnail")
+            return nil
+        }
+        
+        guard let hdURL = imageDict["webformatURL"] as? String else {
+            print("something wrong with hd url")
+            return nil
+        }
+        
+        self.init(numberOfLikes: numberOfLikes, numberOfFavorites: numberOfFavorites, tags: tags, numberOfViews: numberOfViews, numberOfDownloads: numberOfDownloads, userName: userName, thumbnailURL: thumbnailURL, hdURL: hdURL)
+        
+    }
+    
     //associates each property with a given key
     func encode(with aCoder: NSCoder) {
         aCoder.encode(numberOfLikes, forKey: ImagePropertyKeys.numberOfLikes.rawValue)
@@ -59,17 +115,6 @@ final class Image: NSObject, NSCoding {
         }
         
         self.init(numberOfLikes: numberOfLikes, numberOfFavorites: numberOfFavorites, tags: tags, numberOfViews: numberOfViews, numberOfDownloads: numberOfDownloads, userName: userName, thumbnailURL: thumbnailURL, hdURL: hdURL)
-    }
-    
-    init(numberOfLikes: Int, numberOfFavorites: Int, tags: String, numberOfViews: Int, numberOfDownloads: Int, userName: String, thumbnailURL: String, hdURL: String) {
-        self.numberOfLikes = numberOfLikes
-        self.numberOfFavorites = numberOfFavorites
-        self.tags = tags
-        self.numberOfViews = numberOfViews
-        self.numberOfDownloads = numberOfDownloads
-        self.userName = userName
-        self.thumbnailURL = thumbnailURL
-        self.hdURL = hdURL
     }
     
 }
